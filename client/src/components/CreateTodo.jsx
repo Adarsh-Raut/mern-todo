@@ -44,14 +44,14 @@ function CreateTodo() {
           className="px-4 pb-7 flex gap-2 justify-center items-center"
         >
           <input
-            className="w-5/12  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500  "
+            className=" max-w-3xl bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500  "
             type="text"
             autoFocus
             value={input}
             onChange={handleChange}
           />
           <button onClick={addTodo}>
-            <IoAddCircleOutline size="2rem" className="" />
+            <IoAddCircleOutline size="2rem" className="" color="#DBE2EF" />
           </button>
         </form>
       </div>
@@ -60,12 +60,12 @@ function CreateTodo() {
           return (
             <>
               <ul
-                className=" flex font-medium text-xl items-center justify-evenly bg-zinc-600 border-solid border-2 border-black p-[10px] mx-[35%] "
+                className="flex font-medium text-xl items-center  justify-between wrap border-slate-900 bg-slate-700  border-solid border-2 border-slate p-[10px] mx-[35%] "
                 key={todo._id}
               >
                 {todo.todo}
                 <button onClick={() => removeTodo(todo._id)} className="px-1">
-                  <MdDelete size="1.8rem" className=" fill-red-600 inline " />
+                  <MdDelete size="1.8rem" className="" color="#AE445A" />
                 </button>
               </ul>
               <br />
